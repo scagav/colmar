@@ -1,0 +1,50 @@
+html{
+  font-size: 16px;
+}
+
+img{
+  max-width: 100%;
+}
+.head{
+  position: fixed;
+  display: inline-flex;
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+}
+
+.emblem{
+  display: inline-flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li{
+  padding: 0 1rem;
+  color: grey;
+}
+
+.banner{
+  display: flex;
+  background-color: grey;
+  padding-top: 4rem;
+}
+
+.banner img{
+  width: 60%;
+}
+.bannertxt{
+  color: white;
+  font-size: 3rem;
+}
