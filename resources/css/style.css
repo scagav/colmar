@@ -6,7 +6,7 @@ html{
 h1{
   font-size: 4rem;
   font-weight: 700;
-  font-style: oblique;
+
 }
 
 h2{
@@ -15,7 +15,8 @@ h2{
 }
 
 h3{
-  font-size:2.6rem;
+  font-size:2.4rem;
+  font-style: oblique;
 }
 h4 {
   font-size: 1.8rem;
@@ -59,9 +60,16 @@ nav ul{
 
 #academy{
   color: #dc143c;
+
 }
 #colmar{
   color: #000000;
+
+}
+#slash{
+  font-size: 2em;
+  font-weight: 600;
+  color:#f0ffff;
 }
 
 .mobile{
@@ -89,6 +97,9 @@ nav ul{
   padding: 2rem 2.5rem;
 
 }
+li:hover{
+  font-weight: bold;
+}
 .bannertxt{
   display: inline-block ;
   align-items: center;
@@ -105,9 +116,13 @@ nav ul{
 }
 .button1{
   display: inline-block;
-  background-color: #808000;
-  border: 2px blue solid;
+  background-color: #008b8b;
+  border: 2px #696969 solid;
   border-radius: 3px;
+}
+
+.button1:hover{
+  background-color: orange;
 }
 
 .button1 span{
