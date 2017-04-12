@@ -76,9 +76,9 @@ nav ul{
   display: none;
 }
 
-@@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
   .mobile{
-    display: fixed;
+    display: inline-flex;
   }
   .desktop{
     display: none;
@@ -127,6 +127,10 @@ li:hover{
 
 .button1 span{
   padding: .5rem 5rem;
+}
+.button1 span a{
+  text-decoration: none;
+  color: darkblue;
 }
 
 .subbanner{
