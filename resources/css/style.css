@@ -1,22 +1,43 @@
 html{
   font-size: 16px;
+
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+h2{
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+h3{
+  font-size:2.6rem;
+}
+h4 {
+  font-size: 1.8rem;
 }
 
 img{
   max-width: 100%;
 }
+
 .head{
   position: fixed;
   display: inline-flex;
   height: 4rem;
   width: 100%;
-  background-color: white;
+  background-color: #2f4f4f ;
 }
 
 .emblem{
   display: inline-flex;
   align-items: center;
   padding-left: 1.5rem;
+  font-weight: 700;
 }
 
 nav{
@@ -29,22 +50,94 @@ nav ul{
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
+
 }
-nav ul li{
+ li a{
   padding: 0 1rem;
-  color: grey;
+  color: #fff8dc ;
+}
+
+#academy{
+  color: #dc143c;
+}
+#colmar{
+  color: #000000;
+}
+
+.mobile{
+  display: none;
+}
+
+@@media only screen and (max-width: 480px) {
+  .mobile{
+    display: fixed;
+  }
+  .desktop{
+    display: none;
+  }
+
 }
 
 .banner{
   display: flex;
-  background-color: grey;
+  background-color: #778899;
   padding-top: 4rem;
 }
 
 .banner img{
   width: 60%;
+  padding: 2rem 2.5rem;
+
 }
 .bannertxt{
+  display: inline-block ;
+  align-items: center;
+  text-align: center;
   color: white;
   font-size: 3rem;
+  padding-right: 2rem;
+}
+
+.bannercont{
+  display: inline-flex;
+  align-items: center;
+  justify-content:
+}
+.button1{
+  display: inline-block;
+  background-color: #808000;
+  border: 2px blue solid;
+  border-radius: 3px;
+}
+
+.button1 span{
+  padding: .5rem 5rem;
+}
+
+.subbanner{
+  width: 100%;
+  background-color: darkgrey;
+  display: flex;
+}
+
+.block1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blick img{
+  width: 60%;
+}
+
+.block2{
+  display: ;
+}
+
+.colimimage{
+  display: flex;
+}
+
+.colim1, .colim2, .colim3{
+  display:
 }
