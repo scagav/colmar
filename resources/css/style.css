@@ -1,6 +1,6 @@
 html{
   font-size: 16px;
-
+  color: #373D3F;
 }
 
 h1{
@@ -12,18 +12,42 @@ h1{
 h2{
   font-size: 3.2rem;
   font-weight: 500;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 h3{
   font-size:2.4rem;
-  font-style: oblique;
+  padding: 2rem 0rem;
+  font-weight: lighter;
 }
+
 h4 {
   font-size: 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p{
+  font-family: 'EB Garamond', serif;
 }
 
 img{
   max-width: 100%;
+}
+
+video{
+    max-width: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .head{
@@ -31,7 +55,7 @@ img{
   display: inline-flex;
   height: 4rem;
   width: 100%;
-  background-color: #2f4f4f ;
+  background-color: #2f4f4f;
 }
 
 .emblem{
@@ -51,8 +75,8 @@ nav ul{
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
-
 }
+
  li a{
   padding: 0 1rem;
   color: #fff8dc ;
@@ -76,12 +100,15 @@ nav ul{
   display: none;
 }
 
-  @media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .mobile{
     display: inline-flex;
   }
   .desktop{
     display: none;
+  }
+  .forty{
+    width:100%;
   }
 
 }
@@ -90,73 +117,185 @@ nav ul{
   display: flex;
   background-color: #778899;
   padding-top: 4rem;
+
 }
 
-.banner img{
+.sixty{
   width: 60%;
-  padding: 2rem 2.5rem;
-
-}
-li:hover{
-  font-weight: bold;
-}
-.bannertxt{
-  display: inline-block ;
+  padding: 2rem  1.5rem;
   align-items: center;
-  text-align: center;
-  color: white;
-  font-size: 3rem;
-  padding-right: 2rem;
 }
 
-.bannercont{
-  display: inline-flex;
-  align-items: center;
-  justify-content:
+.forty{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  padding: 2rem  1.5rem;
+
 }
+
+.banner .forty{
+  flex-direction: column;
+  align-items: center;
+}
+
 .button1{
-  display: inline-block;
+  display: flex;
   background-color: #008b8b;
   border: 2px #696969 solid;
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .button1:hover{
-  background-color: orange;
+  background-color: #8fbc8f;
 }
 
 .button1 span{
   padding: .5rem 5rem;
 }
+
 .button1 span a{
   text-decoration: none;
-  color: darkblue;
+  color: #fff8dc;
+  font-size: 2rem;
 }
+
+.banner .forty h1{
+  padding-bottom: 2rem;
+}
+
+
 
 .subbanner{
   width: 100%;
-  background-color: darkgrey;
+  background-color: #5f9ea0;
   display: flex;
-}
-
-.block1{
-  display: flex;
+  margin: 0 auto;
   align-items: center;
-  justify-content: center;
 }
 
-.blick img{
-  width: 60%;
-}
-
-.block2{
-  display: ;
-}
-
-.colimimage{
+.subbanner .forty{
   display: flex;
+  flex-direction: column;
+}
+
+.subbanner .forty img{
+  padding: 1rem;
+  display: flex;
+  border: green 1px solid;
+  min-width: 35%;
+  height: auto;
+}
+
+.subbanner .forty .info{
+  display: inline-block ;
+  border: red 1px solid;
+  margin-left: 1rem;
+
+
+}
+
+.info h4{
+  padding-bottom: 2rem;
 }
 
 .colim1, .colim2, .colim3{
-  display:
+  display: inline-flex;
+}
+
+.courses{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  background-color: darkgrey  ;
+}
+
+.courses h2{
+  padding: 2rem 0;
+  text-align: center;
+
+}
+
+.row1, .row2{
+  display: inline-flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.imgbox{
+  background: beige ;
+  margin: 2rem 0rem;
+  margin: 1rem;
+  max-width: 25%;
+
+}
+
+.imgbox img{
+  height: 12rem;
+  width: auto;
+}
+
+.coursebox{
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.coursebox h5{
+  padding: .5rem 0;
+}
+
+.bottom{
+  width: 100%;
+  text-align: center;
+  background-color: #4682b4;
+
+}
+
+.bottombox{
+  display: flex;
+}
+
+.forty .side {
+  display: inline-block;
+}
+
+.side1, .side2{
+  display: flex;
+  align-items: center;
+  background-color: green;
+  margin: 1rem 1rem;
+  }
+
+
+
+footer{
+    display: inline-flex;
+    background-color: #2f4f4f;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    color: #fff8dc ;
+
+
+  }
+.footmain{
+  width: 100%;
+  display: inline-flex;
+  padding: 0rem 1.5rem;
+}
+.leftfoot{
+  width: 50%;
+
+}
+.rightfoot{
+  width: 100%;
+}
+
+footer ul{
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+
 }
