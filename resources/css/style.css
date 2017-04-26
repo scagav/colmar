@@ -98,17 +98,37 @@ nav ul{
 
 .mobile{
   display: none;
+
 }
 
 @media only screen and (max-width: 480px) {
   .mobile{
     display: inline-flex;
   }
+
+  .breakbreak{
+    height: 11rem;
+  }
+
   .desktop{
     display: none;
   }
+  .sixty{
+    display: none;
+  }
   .forty{
-    width:100%;
+    max-width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .subbanner .image{
+    display: none;
+  }
+
+  .button1{
+    align-items: center;
   }
 
 }
@@ -174,6 +194,10 @@ nav ul{
   align-items: center;
 }
 
+.subbanner .sixty img{
+  padding-top: 2rem;
+}
+
 .subbanner .forty{
   display: flex;
   flex-direction: column;
@@ -185,22 +209,21 @@ nav ul{
   border: green 1px solid;
   min-width: 35%;
   height: auto;
+  max-height: 12rem;
 }
 
 .subbanner .forty .info{
-  display: inline-block ;
+  display: flex;
   border: red 1px solid;
   margin-left: 1rem;
-
-
-}
-
-.info h4{
-  padding-bottom: 2rem;
+  justify-content: flex-end;
+  padding-top: 2rem;
+  line-height: 1.2rem;
 }
 
 .colim1, .colim2, .colim3{
   display: inline-flex;
+
 }
 
 .courses{
@@ -208,6 +231,7 @@ nav ul{
   margin: 0 auto;
   width: 100%;
   background-color: darkgrey  ;
+  padding-bottom: 2rem;
 }
 
 .courses h2{
@@ -219,12 +243,11 @@ nav ul{
 .row1, .row2{
   display: inline-flex;
   justify-content: center;
-
   width: 100%;
 }
 
 .imgbox{
-  background: beige ;
+  background: lightblue ;
   margin: 2rem 0rem;
   margin: 1rem;
   max-width: 25%;
@@ -232,8 +255,9 @@ nav ul{
 }
 
 .imgbox img{
-  height: 12rem;
+  max-height: 12rem;
   width: auto;
+
 }
 
 .coursebox{
@@ -244,11 +268,36 @@ nav ul{
   padding: .5rem 0;
 }
 
+@media only screen and (max-width: 480px){
+
+  .imgbox{
+    display: flex;
+    min-width: 20rem;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: .5rem auto;
+
+
+  }
+
+  .coursebox h5, .coursebox p, .courses img{
+    display: none;
+  }
+  .row1, .row2{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+
+  }
+
+}
+
 .bottom{
   width: 100%;
   text-align: center;
   background-color: #4682b4;
-
 }
 
 .bottombox{
@@ -262,11 +311,28 @@ nav ul{
 .side1, .side2{
   display: flex;
   align-items: center;
-  background-color: green;
+  background-color: beige;
   margin: 1rem 1rem;
   }
 
+.side img{
+    min-height: 12rem;
+    width: auto;
+  }
 
+@media only screen and (max-width: 480px){
+  .bottom .forty{
+    display: none;
+
+  }
+  .bottom .sixty{
+    display: block;
+    width: 100%;
+  }
+  .bottom .sixty h3, .bottom .sixty p{
+    display: none;
+  }
+}
 
 footer{
     display: inline-flex;
