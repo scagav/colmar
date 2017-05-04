@@ -100,29 +100,46 @@ nav ul{
   display: none;
 
 }
+img .mobile{
+  display: none;
+}
 
 @media only screen and (max-width: 480px) {
   .mobile{
     display: inline-flex;
+    justify-content: space-around;
   }
-
+  .mobile img{
+    display: block;
+  }
   .breakbreak{
     height: 11rem;
-  }
+    background-color: grey;
+    }
 
   .desktop{
     display: none;
   }
+  .emblem{
+    display: none;
+  }
+
   .sixty{
     display: none;
   }
+
   .forty{
-    max-width:100%;
+    width: 100%;
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: center;
     margin: 0 auto;
   }
+
+  h3{
+    width: 100%;
+  }
+
   .subbanner .image{
     display: none;
   }
@@ -206,7 +223,6 @@ nav ul{
 .subbanner .forty img{
   padding: 1rem;
   display: flex;
-  border: green 1px solid;
   min-width: 35%;
   height: auto;
   max-height: 12rem;
@@ -214,10 +230,12 @@ nav ul{
 
 .subbanner .forty .info{
   display: flex;
-  border: red 1px solid;
   margin-left: 1rem;
-  justify-content: flex-end;
+
+  width:65%;
+  flex-direction: column;
   padding-top: 2rem;
+  padding-left: 2rem;
   line-height: 1.2rem;
 }
 
@@ -276,8 +294,6 @@ nav ul{
     flex-wrap: wrap;
     text-align: left;
     margin: .5rem auto;
-
-
   }
 
   .coursebox h5, .coursebox p, .courses img{
@@ -305,18 +321,25 @@ nav ul{
 }
 
 .forty .side {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: flex-start;
+  width:100%;
 }
 
 .side1, .side2{
   display: flex;
   align-items: center;
   background-color: beige;
-  margin: 1rem 1rem;
+
   }
+.side2{
+  margin: 1rem 0rem;
+}
 
 .side img{
-    min-height: 12rem;
+    min-height: 6rem;
     width: auto;
   }
 
@@ -332,6 +355,16 @@ nav ul{
   .bottom .sixty h3, .bottom .sixty p{
     display: none;
   }
+
+  .rightfoot{
+    display: none;
+  }
+  .leftfoot{
+    margin: 0 auto;
+
+
+    width: 100%;
+  }
 }
 
 footer{
@@ -341,9 +374,8 @@ footer{
     height: 8rem;
     width: 100%;
     color: #fff8dc ;
-
-
   }
+
 .footmain{
   width: 100%;
   display: inline-flex;
